@@ -56,3 +56,16 @@ st.code("""
         def greet(name):
             return f'Hello, {name}!'
 """, language="python");
+
+
+
+
+st.text_area("Enter your feedback:")
+st.number_input("Enter a number:", min_value=0, max_value=100)
+st.slider("Select a value:", min_value=0, max_value=100, value=50)
+st.selectbox("Choose an option:", ["Option 1", "Option 2", "Option 3"])
+st.multiselect("Select multiple options:", ["Option A", "Option B", "Option C"])
+st.date_input("Select a date:")
+st.time_input("Select a time:")
+st.radio("Choose one:", ["Choice 1", "Choice 2", "Choice 3"])
+st.checkbox("I agree to the terms and conditions")
