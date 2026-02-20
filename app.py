@@ -1,6 +1,7 @@
 import numpy as np
 import pandas as pd
 import streamlit as st
+import matplotlib.pyplot as plt
 
 # Displaying Text Content
 
@@ -69,3 +70,11 @@ st.date_input("Select a date:")
 st.time_input("Select a time:")
 st.radio("Choose one:", ["Choice 1", "Choice 2", "Choice 3"])
 st.checkbox("I agree to the terms and conditions")
+
+
+#Matplotlib Chart
+
+fig, ax = plt.subplots()
+ax.plot(data["Column 1"], data["Column 2"], marker='o')
+
+st.pyplot(fig)
